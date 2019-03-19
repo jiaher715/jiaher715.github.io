@@ -1,0 +1,18 @@
+h1 {
+    color: #1b9bd4;
+    font-size: 26pt;
+    background-color: #c4f5e2;
+}
+
+img {
+    width: 250px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 50%;
+    height: 100 px;
+}
