@@ -9,25 +9,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/ps1.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mytable.css">
 </head>
 
 
 <body>
     <div class="container">
         <div class="jumbotron">
-            <h1 align="center">
+            <h1>
                 <div style="font-family:DFKai-sb;">您好，再見</div>
             </h1>
         </div>
-
-        <h2>我的個人履歷
-            </i>
-
-        </h2>
+        <h2>我的個人履歷</h2>
         <h3>
             <div id="container">
-
-
                 <div style="font-family:DFKai-sb;"><strong>目錄</strong></div>
                 <p>
                     <ul>
@@ -35,12 +30,12 @@
                         <li><a href="#生活照片" title="生活照片" smoothhashscroll>生活照片</a></li>
                         <li><a href="#個人經歷" title="個人經歷" smoothhashscroll>個人經歷</a></li>
                         <li><a href="#興趣愛好" title="興趣愛好" smoothhashscroll>興趣愛好</a></li>
+                        <li><a href="#上課時間表" title="上課時間表" smoothhashscroll>上課時間表</a></li>
                     </ul>
                 </p>
-
             </div>
         </h3>
-
+        <hr>
         <h4>
             <section id="基本資料">
                 <strong>基本資料</strong>
@@ -48,21 +43,17 @@
         </h4>
         <p>
             <li>姓名：趙家和
-                <a href="https://www.facebook.com/iamjiaher" target="blank" i class="fab fa-facebook"></a>
-                </i>
+                <a href="https://www.facebook.com/iamjiaher" target="blank"><i class="fab fa-facebook"> </i></a>
             </li>
             <li>性別：男</li>
             <li>出生日期：1998/7/15</li>
             <li>國籍：馬來西亞</li>
             <li>目前就讀：國立臺灣大學哲學系</li>
             <li>學號：B06104029</li>
-
         </p>
-
-
+        <hr>
         <br>
-
-        <h7><strong>生活照片</strong></h7>
+        <h6><strong>生活照片</strong></h6>
         <div id="生活照片">
             <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -103,12 +94,8 @@
                 </a>
             </div>
         </div>
-
-
-
+        <hr>
         <br>
-
-
         <h5>
             <section id="個人經歷">
                 <strong>個人經歷</strong>
@@ -125,11 +112,8 @@
             <li>大學擔任馬來西亞同學會副會長</li>
 
         </p>
-
-
-
+        <hr>
         <br>
-
         <h6>
             <section id="興趣愛好">
                 <strong>興趣愛好</strong>
@@ -140,32 +124,155 @@
                 以照片的方式呈現喜好！
             </div>
             <div id="pback">
-                <ul class="list-inline">
-                    <li>
-                        <div id="pbimg1"></div>打羽球
-                    </li>
-
-                    <li>
-                        <div id="pbimg2"></div>游泳
-                    </li>
-
-                    <li>
-                        <div id="pbimg3"></div>唱歌
-                    </li>
-
-                    <li>
-                        <div id="pbimg4">
-
-
-                        </div>看電影
-
-                    </li>
-
-                </ul>
+                <div id="pbimg2"><span id="hobby">羽球</span></div>
+                <div id="pbimg3"><span id="hobby">唱歌</span></div>
+                <div id="pbimg4"><span id="hobby">游泳</span></div>
+                <div id="pbimg5"><span id="hobby">電影</span></div>
             </div>
         </p>
+        <hr>
+        <section id="上課時間表">
+            <h6><strong>時間表</strong></h6>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                </tr>
+                <tr>
+                    <td>7:10-8:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>8:10-9:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>9:10-10:00</td>
+                    <td></td>
+                    <td></td>
+                    <td id="tech2">斯多噶哲學</td>
+                    <td></td>
+                    <td id="tech2">日文一下</td>
+                </tr>
+                <tr>
+                    <td>10:10-11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td id="tech2">斯多噶哲學</td>
+                    <td></td>
+                    <td id="tech2">日文一下</td>
+                </tr>
+                <tr>
+                    <td>11:10-12:10</td>
+                    <td></td>
+                    <td></td>
+                    <td id="tech2">斯多噶哲學</td>
+                    <td></td>
+                    <td id="tech2">日文一下</td>
+                </tr>
+                <tr>
+                    <td>12:20-13:10</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>13:20-14:10</td>
+                    <td id="tech" rowspan="2">羽球初級</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>14:20-15:10</td>
+
+                    <td></td>
+                    <td></td>
+                    <td id="tech">形上學</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>15:30-16:20</td>
+                    <td id="tech3">探索臺灣:臺灣電影與臺灣社會</td>
+                    <td id="tech3">莊子哲學</td>
+                    <td id="tech4">臺灣現代詩</td>
+                    <td id="tech">形上學</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>16:30-17:20</td>
+                    <td id="tech3">探索臺灣:臺灣電影與臺灣社會</td>
+                    <td id="tech3">莊子哲學</td>
+                    <td id="tech4">臺灣現代詩</td>
+                    <td id="tech">形上學</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>17:30-18:20</td>
+                    <td></td>
+                    <td id="tech3">莊子哲學</td>
+                    <td></td>
+                    <td id="tech">形上學</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>18:25-19:15</td>
+                    <td></td>
+                    <td id="tech5">前端程式設計</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>19:20-20:10</td>
+                    <td></td>
+                    <td id="tech5">前端程式設計</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>20:15-21:05</td>
+                    <td></td>
+                    <td id="tech5">前端程式設計</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>21:10-22:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+        <hr>
+
+        <footer>
+            <div class="text-center">
+                jiaher &copy;jiaher@ntu2019
+            </div>
 
 
+        </footer>
 
 
 
