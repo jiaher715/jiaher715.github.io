@@ -42,14 +42,14 @@ $(document).ready(function() {
 
     $('#next').on('click', function() {
         $('#left').text(`你還剩下${songlist.length}題`)
-        if (songlist.length == 1) {
+        if (songlist.length == 0) {
             $('#next').remove();
             $('#result').css('display', 'inline-block')
         }
         var userAns = $('#userAns').val();
         var correctAns = $('#playSong').data('ans')
         console.log(userAns)
-        if (songlist.length > 1) {
+        if (songlist.length >= 1) {
             if (userAns == correctAns) {
                 alert('恭喜你答對了這題！')
                 GuessCorrect = GuessCorrect + 1;
@@ -70,32 +70,38 @@ $(document).ready(function() {
     })
 
     $('#result').on('click', function() {
+        var userAns = $('#userAns').val();
+        var correctAns = $('#playSong').data('ans')
+        if (userAns == correctAns) {
+            GuessCorrect = GuessCorrect + 1;
+
+        }
         $('#left').remove();
         $('.root').empty();
         $('.root').text(`恭喜你的答對${GuessCorrect}題`)
-        if(GuessCorrect >=0 && GuessCorrect <=5){
-            $('#finalPic').attr('src','./assets/pic/c05.JPEG')
-            $('#finalPic').css('display','block')
+        if (GuessCorrect >= 0 && GuessCorrect <= 5) {
+            $('#finalPic').attr('src', './assets/pic/c05.JPEG')
+            $('#finalPic').css('display', 'block')
         }
-        if(GuessCorrect >=6 && GuessCorrect <=10){
-            $('#finalPic').attr('src','./assets/pic/c610.JPEG')
-            $('#finalPic').css('display','block')
+        if (GuessCorrect >= 6 && GuessCorrect <= 10) {
+            $('#finalPic').attr('src', './assets/pic/c610.JPEG')
+            $('#finalPic').css('display', 'block')
         }
-        if(GuessCorrect >=11 && GuessCorrect <=15){
-            $('#finalPic').attr('src','./assets/pic/c19.JPEG')
-            $('#finalPic').css('display','block')
+        if (GuessCorrect >= 11 && GuessCorrect <= 15) {
+            $('#finalPic').attr('src', './assets/pic/c19.JPEG')
+            $('#finalPic').css('display', 'block')
         }
-        if(GuessCorrect >=16 && GuessCorrect <=18){
-            $('#finalPic').attr('src','./assets/pic/c1115.JPEG')
-            $('#finalPic').css('display','block')
+        if (GuessCorrect >= 16 && GuessCorrect <= 18) {
+            $('#finalPic').attr('src', './assets/pic/c1115.JPEG')
+            $('#finalPic').css('display', 'block')
         }
-        if(GuessCorrect == 19){
-            $('#finalPic').attr('src','./assets/pic/c20.JPEG')
-            $('#finalPic').css('display','block')
+        if (GuessCorrect == 19) {
+            $('#finalPic').attr('src', './assets/pic/c20.JPEG')
+            $('#finalPic').css('display', 'block')
         }
-        if(GuessCorrect == 20){
-            $('#finalPic').attr('src','./assets/pic/c1618.JPEG')
-            $('#finalPic').css('display','block')
+        if (GuessCorrect == 20) {
+            $('#finalPic').attr('src', './assets/pic/c1618.JPEG')
+            $('#finalPic').css('display', 'block')
         }
     })
 
