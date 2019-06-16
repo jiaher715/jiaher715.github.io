@@ -1,5 +1,12 @@
 html {
-    background-color: #5c636f
+    background-color: #5c636f;
+    color: white;
+    font-family: DFKai-sb;
+    font-size: -webkit-xxx-large;
+}
+
+h1 {
+    font-size: 16px
 }
 
 button {
